@@ -1,9 +1,7 @@
-Lined entered1
-Lined entered2
-Lined entered3
-Lined entered4
+
 Lined entered5
 Lined entered6
+Lined entered7
 
 Installation in ubuntu
 
