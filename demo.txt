@@ -1,0 +1,68 @@
+Installation in ubuntu
+
+sudo apt-get install git-flow
+
+Initialize
+
+git flow init
+
+production branch :- master 
+development branch:- develop
+
+prefix for features branch: feature/
+prefix for release branch: release/
+prefix for hotfix branch: hotfix/
+prefix for support branch: support/
+prefix for version: version-
+
+Features
+
+Start a new feature
+
+git flow feature start issue#no
+
+Get changes from other features
+
+git flow feature pull origin issue#no
+
+Publish a feature
+
+git flow feature publish issue#no
+
+Note: Don't forget to take pull form develop and make sure all the test cases are running
+
+
+Finish up a feature
+
+git flow feature finish issue#no 
+Note: To be only done by the one who merges the pull request
+Release
+
+Start a release
+
+git flow release start version-1.x.x
+
+Start a release from a different branch
+
+git flow release start version-1.x.x feature/issue#no
+Publish a release
+
+git flow release publish version-1.x.x
+
+Finish up a release
+
+git flow release finish version-1.x.x git push --tags 
+Note: To be done by who merges the branches
+Hotfixes
+
+Start a hotfix
+
+git flow hotfix start issue#3
+
+Start a hotfix from a different branch other than master
+
+git flow hotfix start issue#3 release/version-1.x.x
+Finish a hotfix
+
+git flow hotfix finish issue#3
+
